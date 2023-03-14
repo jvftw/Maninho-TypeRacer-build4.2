@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yo.jogoControlador">
+    <children>
+        <Text fx:id="segundos" layoutX="200.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="42.64990234375">
+            <font>
+                <Font name="Calibri" size="31.0" />
+            </font>
+        </Text>
+        <Text layoutX="198.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="segundos">
+            <font>
+                <Font name="Corbel Light Italic" size="13.0" />
+            </font>
+        </Text>
+        <Text layoutX="294.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="palavras/min">
+            <font>
+                <Font name="Corbel Light Italic" size="13.0" />
+            </font>
+        </Text>
+        <Text layoutX="388.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\% precisão">
+            <font>
+                <Font name="Corbel Light Italic" size="13.0" />
+            </font>
+        </Text>
+        <Text fx:id="wordsPerMin" layoutX="305.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="42.64990234375">
+            <font>
+                <Font name="Calibri" size="31.0" />
+            </font>
+        </Text>
+        <Text fx:id="acc" layoutX="393.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="49.0">
+            <font>
+                <Font name="Calibri" size="31.0" />
+            </font>
+        </Text>
+        <TextField fx:id="userWord" alignment="CENTER" layoutX="214.0" layoutY="218.0" onKeyPressed="#startGame" prefHeight="42.0" prefWidth="214.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <Text fx:id="programWord" layoutX="229.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="word" textAlignment="CENTER" wrappingWidth="184.74749755859375">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <Text fx:id="secondProgramWord" fill="#0000005b" layoutX="587.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="word" textAlignment="CENTER" wrappingWidth="184.74749755859375">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="pogChamp" fitHeight="51.0" fitWidth="49.0" layoutX="284.0" layoutY="302.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/check.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="omegaLul" fitHeight="51.0" fitWidth="49.0" layoutX="284.0" layoutY="302.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/wrong.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="desceProPlay" alignment="TOP_LEFT" layoutX="271.0" layoutY="290.0" mnemonicParsing="false" onAction="#toMainMenu" text="Voltar ao Menu" />
+      <Button fx:id="playButton1" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="44.0" layoutY="422.0" mnemonicParsing="false" onAction="#submitNome" prefHeight="28.0" prefWidth="111.0" style="-fx-background-color: #185adb; -fx-cursor: hand;" text="Trocar Nome" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="nomeN" layoutX="27.0" layoutY="381.0" promptText="Escreva seu nome">
+         <font>
+            <Font name="Calibri Italic" size="12.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
